@@ -10,7 +10,7 @@ if(edad >= 18){
    alert("Puedes invertir en esta plataforma");
 }else if(edad < 18){
    alert("No puedes intertir en nuestra plataforma");
-   edad = parseInt(prompt("Ingrese su edad"));
+   edad = parseInt(prompt("Ingrese su edad nuevamente"));
 }
 class Usuario{
    constructor(nombreIngresado, apellidoIngresado, edad){
@@ -22,6 +22,12 @@ class Usuario{
       return `Bienvenido ${this.nombre + this.apellido}`
    }
 }
+const usuarios =[];
+usuarios.push(new Usuario("Maria", "Garcia", "45"))
+usuarios.push(new Usuario("Dario", "Gonzalez", "30"))
+
+console.log(usuarios)
+
 let num1 = parseInt(prompt("Ingrese el capital a invertir"));
 let ingreso = num1;
 let num2 = parseInt(prompt("Ingrese cantidad de meses a invertir del 1 al 12"));
